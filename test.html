@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>歡迎訪問我的主頁</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">開啟對話盒彈出視窗</a>
+
+    <div data-role="popup" id="myPopupDialog">
+      <div data-role="header">
+        <h1>頭部文字</h1>
+      </div>
+
+      <div data-role="main" class="ui-content">
+        <h2>歡迎訪問彈出視窗對話盒!</h2>
+        <p>jQuery Mobile 非常有意思!</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">回傳</a>
+      </div>
+
+      <div data-role="footer">
+        <h1>底部文字</h1>
+      </div>
+    </div>
+
+     <!-- 圖片popup -->
+     <a href="#popupTh" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="imges/three_dong.jpg" alt="three" style="width:30%"></a>
+     <a href="#popupTr" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/true_sword.jpg" alt="true" style="width:30%"></a>
+     <div data-role="popup" id="popupTh" data-overlay-theme="b" data-theme="b" data-corners="false">
+         <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="imges/three_dong.jpg" style="max-height:512px;" alt="three">
+     </div>
+     <div data-role="popup" id="popupTr" data-overlay-theme="b" data-theme="b" data-corners="false">
+         <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="images/true_sword.jpg" style="max-height:512px;" alt="true">
+     </div>
+  </div>
+
+  <div data-role="footer">
+    <h1>底部文字</h1>
+  </div>
+</div>
+
+</body>
+</html>

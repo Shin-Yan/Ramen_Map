@@ -1,42 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
+
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
   <meta charset=utf-8>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel=icon href=images/ramen.png type=image/x-icon />
-  <title> 拉麵超讚 </title>
-
-  <style>
-    .fakeimg {
-        height: 200px;
-        background: #aaa;
-      }
-  </style>
+  <link rel="icon" href="images/ramen.png" type="image/png/">
+  <title> 拉麵好ㄘ </title>
 </head>
+
 <body>
   
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <h1>歡迎來到拉麵地圖</h1>
-    <p>點擊圖片可以連線到FB粉專或是食記><</p>
+  <div class="jumbotron text-center" style="margin-bottom:0" >
+    <h1>拉麵地圖</h1>
+    <p>地址點下去會連結到google map</p>
   </div>
   
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#">Navigation</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <a class="navbar-brand" href="https://shin-yan.github.io/Ramen_Map/">首頁</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">選擇縣市<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">台北市</a></li>
+              <li><a href="#">桃園市</a></li>
+          </ul>
+      </li>
       </ul>
     </div>
   </nav>
@@ -45,55 +44,50 @@
     <div class="row">
       <div class="col-sm-4">
         <h2>關於我</h2>
-        <h5>Photo of me:</h5>
-        <a href="http://homepage.ntu.edu.tw/~b05201045/"><img src="images/portrait.jpg" width="200" height="200" class="img-responsive" alt="Responsive image">
-        <p>我的個人homepage</p>
+        <h5></h5>
+        
+        <p></p>
         <h3>Some Links</h3>
-        <p>還想不到這裡要幹麻</p>
+        <p></p>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link active" href="http://homepage.ntu.edu.tw/~b05201045/">My homepage</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="https://www.facebook.com/sdfghlklk/">Facebook</a>
           </li>
         </ul>
         <hr class="d-sm-none">
       </div>
       <div class="col-sm-8">
-        <h2>三冬</h2>
-        <h5>Jul 8, 2020</h5>
-        <a href="#myPopup" data-rel="popup" data-position-to="window"></a>
-        <a href="https://www.facebook.com/%E4%B8%89%E5%86%AC%E9%BA%B5%E8%88%96-183414512398428"><img src="images/three_dong.jpg" width="600" height="300" class="img-responsive" alt="Responsive image">
-        <p>我心目中桃園第一名..</p>
-        <p>這家要排非常久,要早點去比較好</p>
-        <br>
-        <h2>真劍</h2>
-        <h5>Jul 9, 2020</h5>
-        <a href="https://www.facebook.com/%E7%9C%9F%E5%8A%8D%E6%8B%89%E9%BA%B5-1439647916166198/"><img src="images/true_sword.jpg" width="600" height="300" class="img-responsive" alt="Responsive image">
-        <p>心目中台大附近第一名..</p>
-        <p>吃過兩種口味,各有千秋,清湯清爽好入口,用蝶豆花製造出夢幻的顏色; 濃湯濃郁十足, 炙燒豬肉是特色</p>
-        <p>個人認為濃湯略勝一籌於是放濃湯</p>
-      </div>
+    
+        <h1>桃園</h1>
+        <h3>1. 三冬</h3>
+        <a href="#popupTh" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/three_dong.jpg" alt="three" style="width:70%"></a>
+            <div data-role="popup" id="popupTh" data-overlay-theme="b" data-theme="b" data-corners="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="images/three_dong.jpg" style="max-height:512px;" alt="three">
+            </div>
+        <p></p>
+        <a href="https://reurl.cc/L0q284"><p>地址:330桃園市桃園區同德十街17號</a>  (近桃園市藝文特區)</p>
+        
+        <h1>台北</h1>
+        <h3>1. 真劍</h3>
+        <a href="#popupTr" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="images/true_sword.jpg" alt="true" style="width:70%"></a>
+              <div data-role="popup" id="popupTr" data-overlay-theme="b" data-theme="b" data-corners="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="images/true_sword.jpg" style="max-height:512px;" alt="true">
+              </div>  
+        <p></p>
+        <a href="https://reurl.cc/ZQv8n6"><p>地址:106台北市大安區師大路126巷1號</a>  (近捷運台電大樓站) </p>
+        </div>
     </div>
   </div>
   
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <p>Last update:2021/3/22</p>
-    <p>Connect me </p>
+  <div class="jumbotron text-center" style="margin-top:30px">
+    <p>Last update:2021/4/8</p>
+    <p>Contact me </p>
     <p>Tel: 0987813858</p>
     <p>Email: sdfghlklk@gmail.com</p>
   </div>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
